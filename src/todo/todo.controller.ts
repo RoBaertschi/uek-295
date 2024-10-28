@@ -15,14 +15,7 @@ import { TodoService } from './todo.service';
 import { CreateTodoDto } from './dto/create-todo.dto';
 import { UpdateTodoDto } from './dto/update-todo.dto';
 import { JwtAuthGuard } from '../auth/guards/jwt-auth.guard';
-import {
-  ApiBearerAuth,
-  ApiForbiddenResponse,
-  ApiNoContentResponse,
-  ApiOkResponse,
-  ApiTags,
-  ApiUnauthorizedResponse,
-} from '@nestjs/swagger';
+import { ApiBearerAuth, ApiForbiddenResponse, ApiOkResponse, ApiTags, ApiUnauthorizedResponse } from '@nestjs/swagger';
 import { ErrorUnauthorizedDto } from '../generic.dtos/error.unauthorized.dto';
 import { ReturnTodoDto } from './dto/return-todo.dto';
 import { UserInfoDto } from '../generic.dtos/userDtoAndEntity';
@@ -111,7 +104,6 @@ export class TodoController {
       throw new NotFoundException(`We did not found a todo item with id ${id}!`);
     }
     result = await this.todoService.remove(+id);
-    console.log(result);
     return result;
   }
 }

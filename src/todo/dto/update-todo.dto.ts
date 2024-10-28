@@ -5,11 +5,11 @@ export class UpdateTodoDto {
   @ApiProperty({ description: 'the description of the todo', example: 'description' })
   @IsString()
   @IsOptional()
-  description: string;
+  description?: string;
   @ApiProperty({ description: 'the title of the todo', example: 'title' })
   @IsString()
   @IsOptional()
-  title: string;
+  title?: string;
   @ApiProperty({ description: 'if the todo is closed', example: false, default: false })
   @IsBoolean()
   @IsOptional()
