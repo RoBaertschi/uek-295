@@ -1,7 +1,7 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { RootService } from './root.service';
 import * as process from 'process';
-import { MockType } from '../../../mocktypes/mocktype';
+import { MockType } from '../../../../../src/mocktypes/mocktype';
 import { DataSource } from 'typeorm';
 import { getDataSourceToken } from '@nestjs/typeorm';
 

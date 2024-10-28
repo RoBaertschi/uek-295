@@ -22,17 +22,17 @@ import {
   ApiTags,
   ApiUnauthorizedResponse,
 } from '@nestjs/swagger';
-import { ErrorUnauthorizedDto } from '../../../generic.dtos/error.unauthorized.dto';
-import { ErrorDto } from '../../../generic.dtos/error.dto';
-import { UserEntity } from '../../../generic.dtos/userDtoAndEntity';
+import { ErrorUnauthorizedDto } from '../../../../../src/generic.dtos/error.unauthorized.dto';
+import { ErrorDto } from '../../../../../src/generic.dtos/error.dto';
+import { UserEntity } from '../../../../../src/generic.dtos/userDtoAndEntity';
 import { BaseController } from '../../../../../src/base/base.controller';
 import { ArticleService } from '../article.service/article.service';
 import { ArticleReturnDto } from '../dto/article-return-dto';
 import { ArticleCreateDto } from '../dto/article-create.dto';
 import { ArticleUpdateDto } from '../dto/article-update.dto';
 import { JwtAuthGuard } from '../../../../../src/auth/guards/jwt-auth.guard';
-import { CorrId } from '../../../decorators/correlation-id/correlation-id.decorator';
-import { CurrentUser } from '../../../decorators/current-user/current-user.decorator';
+import { CorrId } from '../../../../../src/decorators/correlation-id/correlation-id.decorator';
+import { CurrentUser } from '../../../../../src/decorators/current-user/current-user.decorator';
 
 @Controller('article')
 @ApiTags('Article Methods')

@@ -1,6 +1,6 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { ResetService } from './reset.service';
-import { MockType } from '../../../mocktypes/mocktype';
+import { MockType } from '../../mocktypes/mocktype';
 import { DataSource } from 'typeorm';
 import { getDataSourceToken } from '@nestjs/typeorm';
 import { NotFoundException } from '@nestjs/common';

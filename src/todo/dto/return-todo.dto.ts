@@ -1,5 +1,6 @@
 import { CreateTodoDto } from './create-todo.dto';
 import { ApiProperty } from '@nestjs/swagger';
+import { IsString } from 'class-validator';
 
 export class ReturnTodoDto extends CreateTodoDto {
   @ApiProperty({ description: 'the id of the todo', example: 1, minimum: 1 })

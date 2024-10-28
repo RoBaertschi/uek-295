@@ -5,9 +5,9 @@ import * as request from 'supertest';
 import { Test, TestingModule } from '@nestjs/testing';
 import { INestApplication } from '@nestjs/common';
 import { AppModule } from '../src/app.module';
-import { LoginDto } from '../old/sample/generic.dtos/login.dto';
-import { BearerDto } from '../old/sample/generic.dtos/bearer.dto';
-import { UserReturnDto } from '../old/sample/generic.dtos/userDtoAndEntity';
+import { LoginDto } from '../src/generic.dtos/login.dto';
+import { BearerDto } from '../src/generic.dtos/bearer.dto';
+import { UserReturnDto } from '../src/generic.dtos/userDtoAndEntity';
 import { TestLogger } from './testing-tools/logger.tools';
 import { TestHttpClient } from './testing-tools/test-http-client';
 export const loginDtoUser: LoginDto = {

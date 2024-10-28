@@ -1,10 +1,10 @@
 import { BadRequestException, Injectable } from '@nestjs/common';
 import { UserService } from '../user.service/user.service';
 import { JwtService } from '@nestjs/jwt';
-import { BearerDto } from '../../../old/sample/generic.dtos/bearer.dto';
-import { LoginDto } from '../../../old/sample/generic.dtos/login.dto';
+import { BearerDto } from '../../generic.dtos/bearer.dto';
+import { LoginDto } from '../../generic.dtos/login.dto';
 import { BaseService } from '../../base/base.service';
-import { UserEntity } from '../../../old/sample/generic.dtos/userDtoAndEntity';
+import { UserEntity } from '../../generic.dtos/userDtoAndEntity';
 
 @Injectable()
 export class AuthService extends BaseService {

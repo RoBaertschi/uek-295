@@ -3,7 +3,7 @@ import { ArticleService } from './article.service';
 import { Repository } from 'typeorm';
 import { ArticleEntity } from '../entities/article.entity';
 import { getRepositoryToken } from '@nestjs/typeorm';
-import { MockType, RepositoryMockFactory } from '../../../mocktypes/mocktype';
+import { MockType, RepositoryMockFactory } from '../../../../../src/mocktypes/mocktype';
 import {
   BadRequestException,
   InternalServerErrorException,

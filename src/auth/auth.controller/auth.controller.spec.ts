@@ -1,9 +1,9 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { AuthController } from './auth.controller';
 import { AuthService } from '../auth.service/auth.service';
-import { LoginDto } from '../../../old/sample/generic.dtos/login.dto';
-import { UserReturnDto } from '../../../old/sample/generic.dtos/userDtoAndEntity';
-import { MockType } from '../../../old/sample/mocktypes/mocktype';
+import { LoginDto } from '../../generic.dtos/login.dto';
+import { UserReturnDto } from '../../generic.dtos/userDtoAndEntity';
+import { MockType } from '../../mocktypes/mocktype';
 import { BadRequestException } from '@nestjs/common';
 
 // we're testing with these users, and we expect this users

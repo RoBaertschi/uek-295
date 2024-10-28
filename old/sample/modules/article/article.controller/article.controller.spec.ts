@@ -1,7 +1,7 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { ArticleController } from './article.controller';
 import { ArticleService } from '../article.service/article.service';
-import { UserEntity } from '../../../generic.dtos/userDtoAndEntity';
+import { UserEntity } from '../../../../../src/generic.dtos/userDtoAndEntity';
 import { ArticleEntity } from '../entities/article.entity';
 
 const userUser: UserEntity = {

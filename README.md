@@ -40,7 +40,7 @@ Ersteller:
 | Alle/ein Item lesen                             | 1.5h        | 10 min            |
 | Item anlegen und anpassen                       | 1.5h        | ^                 |
 | Item ersetzen und löschen                       | 1.5h        | ^                 |
-| Testing und Bugfixing                           | 3h          |                   |  
+| Testing und Bugfixing                           | 3h          | 1.5h              |  
 | Linter fixing                                   | 30min       |                   |
 | Linter fixing                                   | 30min       |                   |
 

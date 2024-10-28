@@ -3,7 +3,7 @@ import { INestApplication } from '@nestjs/common';
 import { TestLogger } from './logger.tools';
 import { AuthService } from '../../src/auth/auth.service/auth.service';
 import { loginDtoAdmin, loginDtoUser } from '../security.e2e-spec';
-import { ResetService } from '../../old/sample/modules/reset/reset.service/reset.service';
+import { ResetService } from '../../src/reset/reset.service/reset.service';
 
 export class TestHttpClient {
   private readonly httpServer;
@@ -42,29 +42,34 @@ export class TestHttpClient {
       .get('/' + this.tableName + '/')
       .set('Authorization', `Bearer ${token}`);
   }
+
   getOne(token: string, id: number) {
     return request(this.httpServer)
       .get('/' + this.tableName + '/' + id)
       .set('Authorization', `Bearer ${token}`);
   }
+
   post(token: string, data: object) {
     return request(this.httpServer)
       .post('/' + this.tableName + '/')
       .set('Authorization', `Bearer ${token}`)
       .send(data);
   }
+
   put(token: string, id: number, data: object) {
     return request(this.httpServer)
       .put('/' + this.tableName + '/' + id)
       .set('Authorization', `Bearer ${token}`)
       .send(data);
   }
+
   patch(token: string, id: number, data: object) {
     return request(this.httpServer)
       .patch('/' + this.tableName + '/' + id)
       .set('Authorization', `Bearer ${token}`)
       .send(data);
   }
+
   del(token: string, id: number) {
     return request(this.httpServer)
       .delete('/' + this.tableName + '/' + id)

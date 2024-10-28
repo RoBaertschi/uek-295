@@ -14,7 +14,7 @@ export class TodoService {
   ) {}
 
   async create(createTodoDto: CreateTodoDto) {
-    await this.todoRepository.save(createTodoDto);
+    return await this.todoRepository.save(createTodoDto);
   }
 
   async findAll(): Promise<ReturnTodoDto[]> {
@@ -26,10 +26,14 @@ export class TodoService {
   }
 
   async update(id: number, updateTodoDto: UpdateTodoDto) {
-    return await this.todoRepository.update({ id }, updateTodoDto);
+    await this.todoRepository.update({ id }, updateTodoDto);
+    return await this.todoRepository.findOneBy({ id });
   }
 
   async remove(id: number) {
-    await this.todoRepository.delete({ id });
+    const entity = await this.findOne(id);
+
+    await this.todoRepository.remove({ ...entity });
+    return entity;
   }
 }

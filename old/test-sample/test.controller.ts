@@ -1,6 +1,6 @@
 import { Controller, Delete, ForbiddenException, Get, Param, ParseIntPipe, UseGuards } from '@nestjs/common';
 import { TestService } from './test.service';
-import { CurrentUser } from '../sample/decorators/current-user/current-user.decorator';
+import { CurrentUser } from '../../src/decorators/current-user/current-user.decorator';
 import { JwtAuthGuard } from '../../src/auth/guards/jwt-auth.guard';
 
 export class User {

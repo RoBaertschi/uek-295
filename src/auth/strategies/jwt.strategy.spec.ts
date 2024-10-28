@@ -1,5 +1,5 @@
 import { JwtStrategy } from './jwt.strategy';
-import { MockType } from '../../../old/sample/mocktypes/mocktype';
+import { MockType } from '../../mocktypes/mocktype';
 import { AuthService } from '../auth.service/auth.service';
 import { Test, TestingModule } from '@nestjs/testing';
 import { UnauthorizedException } from '@nestjs/common';

@@ -1,9 +1,9 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { MockType } from '../../../mocktypes/mocktype';
+import { MockType } from '../../mocktypes/mocktype';
 import { BadRequestException, MethodNotAllowedException } from '@nestjs/common';
 import { ResetService } from '../reset.service/reset.service';
 import { ResetController } from './reset.controller';
-import { UserEntity } from '../../../generic.dtos/userDtoAndEntity';
+import { UserEntity } from '../../generic.dtos/userDtoAndEntity';
 
 const user: UserEntity = {
   password: 'no',

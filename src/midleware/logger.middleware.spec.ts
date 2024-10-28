@@ -1,6 +1,6 @@
 import { LoggerMiddleware } from './logger.middleware';
 import { Response, NextFunction, Request } from 'express';
-import { Constants } from '../../old/sample/constants/constants';
+import { Constants } from '../constants/constants';
 
 describe('LoggerMiddleware', () => {
   let middleware: LoggerMiddleware;

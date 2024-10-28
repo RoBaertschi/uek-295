@@ -2,10 +2,10 @@ import { Body, Controller, Post } from '@nestjs/common';
 import { ApiBadRequestResponse, ApiOkResponse, ApiTags } from '@nestjs/swagger';
 import { BaseController } from '../../base/base.controller';
 import { AuthService } from '../auth.service/auth.service';
-import { ErrorDto } from '../../../old/sample/generic.dtos/error.dto';
-import { BearerDto } from '../../../old/sample/generic.dtos/bearer.dto';
-import { LoginDto } from '../../../old/sample/generic.dtos/login.dto';
-import { CorrId } from '../../../old/sample/decorators/correlation-id/correlation-id.decorator';
+import { ErrorDto } from '../../generic.dtos/error.dto';
+import { BearerDto } from '../../generic.dtos/bearer.dto';
+import { LoginDto } from '../../generic.dtos/login.dto';
+import { CorrId } from '../../decorators/correlation-id/correlation-id.decorator';
 
 @Controller('auth')
 @ApiTags('Auth Methods')

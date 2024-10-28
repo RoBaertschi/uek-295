@@ -1,7 +1,7 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { RootController } from './root.controller';
 import { RootService } from '../root.service/root.service';
-import { MockType } from '../../../mocktypes/mocktype';
+import { MockType } from '../../../../../src/mocktypes/mocktype';
 
 export const RootServiceMockFactory: () => MockType<RootService> = jest.fn(() => ({
   getAwait: jest.fn((entity) => entity),

@@ -1,11 +1,11 @@
-import { BaseService } from '../../../../../src/base/base.service';
-import { InjectDataSource } from '@nestjs/typeorm';
+import { BaseService } from '../../base/base.service';
 import { DataSource } from 'typeorm';
-import { Injectable, NotFoundException } from '@nestjs/common';
+import { Inject, Injectable, NotFoundException } from '@nestjs/common';
+import { DATA_SOURCE } from '../../database/database.module';
 
 @Injectable()
 export class ResetService extends BaseService {
-  constructor(@InjectDataSource() private readonly dataSource: DataSource) {
+  constructor(@Inject(DATA_SOURCE) private readonly dataSource: DataSource) {
     super('reset.service');
   }
   async resetTable(corrId: number, tableName: string): Promise<string> {
