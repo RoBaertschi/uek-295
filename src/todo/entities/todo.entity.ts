@@ -9,6 +9,6 @@ export class Todo {
   description: string;
   @Column()
   title: string;
-  @Column()
+  @Column({ default: false })
   closed: boolean;
 }

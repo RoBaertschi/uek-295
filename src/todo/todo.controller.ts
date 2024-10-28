@@ -24,8 +24,8 @@ export class TodoController {
   @ApiCreatedResponse({ description: 'created user' })
   @ApiUnauthorizedResponse({ description: 'Not logged in!', type: ErrorUnauthorizedDto })
   @Post()
-  create(@Body() createTodoDto: CreateTodoDto) {
-    return this.todoService.create(createTodoDto);
+  async create(@Body() createTodoDto: CreateTodoDto) {
+    await this.todoService.create(createTodoDto);
   }
 
   @UseGuards(JwtAuthGuard)
@@ -35,8 +35,8 @@ export class TodoController {
   })
   @ApiUnauthorizedResponse({ description: 'Not logged in!', type: ErrorUnauthorizedDto })
   @Get()
-  findAll() {
-    return this.todoService.findAll();
+  async findAll() {
+    return await this.todoService.findAll();
   }
 
   @UseGuards(JwtAuthGuard)
@@ -46,8 +46,8 @@ export class TodoController {
   })
   @ApiUnauthorizedResponse({ description: 'Not logged in!', type: ErrorUnauthorizedDto })
   @Get(':id')
-  findOne(@Param('id') id: string) {
-    return this.todoService.findOne(+id);
+  async findOne(@Param('id') id: string) {
+    return await this.todoService.findOne(+id);
   }
 
   @UseGuards(JwtAuthGuard)
@@ -57,15 +57,15 @@ export class TodoController {
   })
   @ApiUnauthorizedResponse({ description: 'Not logged in!', type: ErrorUnauthorizedDto })
   @Patch(':id')
-  update(@Param('id') id: string, @Body() updateTodoDto: UpdateTodoDto) {
-    return this.todoService.update(+id, updateTodoDto);
+  async update(@Param('id') id: string, @Body() updateTodoDto: UpdateTodoDto) {
+    return await this.todoService.update(+id, updateTodoDto);
   }
 
   @UseGuards(JwtAuthGuard)
   @ApiNoContentResponse({ description: 'deleted todo' })
   @ApiUnauthorizedResponse({ description: 'Not logged in!', type: ErrorUnauthorizedDto })
   @Delete(':id')
-  remove(@Param('id') id: string) {
-    return this.todoService.remove(+id);
+  async remove(@Param('id') id: string) {
+    await this.todoService.remove(+id);
   }
 }

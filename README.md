@@ -37,10 +37,9 @@ Ersteller:
 | SqlIte Datenbank aufsetzen und DTO Files machen | 30min       | 40 min            |
 | Swagger API Dokumentation                       | 30 min      | 45 min            |
 | Security.env erstellen                          | 10min       | 5 min             |
-| Alle/ein Item lesen                             | 1.5h        |                   |
-| Item anlegen und anpassen                       | 1.5h        |                   |
-| Item ersetzen und löschen                       | 1.5h        |                   |
-| JWT implementieren                              | 1.5h        |                   |
+| Alle/ein Item lesen                             | 1.5h        | 10 min            |
+| Item anlegen und anpassen                       | 1.5h        | ^                 |
+| Item ersetzen und löschen                       | 1.5h        | ^                 |
 | Testing und Bugfixing                           | 3h          |                   |  
 | Linter fixing                                   | 30min       |                   |
 | Linter fixing                                   | 30min       |                   |
