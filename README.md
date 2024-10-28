@@ -32,8 +32,8 @@ Ersteller:
 
 | Aufgabe                                         | aufwand / h | echter aufwand /h |
 |-------------------------------------------------|-------------|-------------------|
-| Zeitplan erstellen                              | 30 min      |                   |
-| Package.json bearbeiten                         | 10min       |                   |
+| Zeitplan erstellen                              | 30 min      | 30 min            |
+| Package.json bearbeiten                         | 10min       | 10 min            |
 | SqlIte Datenbank aufsetzen und DTO Files machen | 30min       |                   |
 | Swagger API Dokumentation                       | 30 min      |                   |
 | Security.env erstellen                          | 10min       |                   |

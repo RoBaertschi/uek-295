@@ -7,6 +7,7 @@ import { AuthModule } from '../old/sample/modules/auth/auth.module';
 import { RootModule } from '../old/sample/modules/root/root.module';
 import { ResetModule } from '../old/sample/modules/reset/reset.module';
 import { TodoModule } from './todo/todo.module';
+import { DatabaseModule } from './database/database.module';
 
 @Module({
   imports: [
@@ -27,6 +28,7 @@ import { TodoModule } from './todo/todo.module';
       }),
     }),
     TodoModule,
+    DatabaseModule,
   ],
 })
 export class AppModule implements NestModule {
