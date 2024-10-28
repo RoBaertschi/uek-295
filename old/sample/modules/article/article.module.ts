@@ -1,6 +1,6 @@
 import { MiddlewareConsumer, Module, NestModule } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { LoggerMiddleware } from '../../midleware/logger.middleware';
+import { LoggerMiddleware } from '../../../../src/midleware/logger.middleware';
 import { ArticleService } from './article.service/article.service';
 import { ArticleController } from './article.controller/article.controller';
 import { ArticleEntity } from './entities/article.entity';

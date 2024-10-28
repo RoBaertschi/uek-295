@@ -1,5 +1,5 @@
 import { Injectable, Logger } from '@nestjs/common';
-import { BaseService } from '../../../base/base.service';
+import { BaseService } from '../../../../../src/base/base.service';
 import { InjectDataSource } from '@nestjs/typeorm';
 import { DataSource } from 'typeorm';
 

@@ -1,7 +1,7 @@
 import * as request from 'supertest';
 import { INestApplication } from '@nestjs/common';
 import { TestLogger } from './logger.tools';
-import { AuthService } from '../../old/sample/modules/auth/auth.service/auth.service';
+import { AuthService } from '../../src/auth/auth.service/auth.service';
 import { loginDtoAdmin, loginDtoUser } from '../security.e2e-spec';
 import { ResetService } from '../../old/sample/modules/reset/reset.service/reset.service';
 

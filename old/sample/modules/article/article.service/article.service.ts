@@ -1,7 +1,7 @@
 import { BadRequestException, Injectable, MethodNotAllowedException, NotFoundException } from '@nestjs/common';
 import { ArticleCreateDto } from '../dto/article-create.dto';
 import { ArticleUpdateDto } from '../dto/article-update.dto';
-import { BaseService } from '../../../base/base.service';
+import { BaseService } from '../../../../../src/base/base.service';
 import { ArticleEntity } from '../entities/article.entity';
 import { Repository } from 'typeorm';
 import { InjectRepository } from '@nestjs/typeorm';

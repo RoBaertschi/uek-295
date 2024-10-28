@@ -34,8 +34,8 @@ Ersteller:
 |-------------------------------------------------|-------------|-------------------|
 | Zeitplan erstellen                              | 30 min      | 30 min            |
 | Package.json bearbeiten                         | 10min       | 10 min            |
-| SqlIte Datenbank aufsetzen und DTO Files machen | 30min       |                   |
-| Swagger API Dokumentation                       | 30 min      |                   |
+| SqlIte Datenbank aufsetzen und DTO Files machen | 30min       | 40 min            |
+| Swagger API Dokumentation                       | 30 min      | 45 min            |
 | Security.env erstellen                          | 10min       |                   |
 | Alle/ein Item lesen                             | 1.5h        |                   |
 | Item anlegen und anpassen                       | 1.5h        |                   |

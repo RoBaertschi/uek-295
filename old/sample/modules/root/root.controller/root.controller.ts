@@ -2,7 +2,7 @@ import { Controller, Get } from '@nestjs/common';
 import { RootService } from '../root.service/root.service';
 import { ApiOkResponse, ApiTags } from '@nestjs/swagger';
 import { CorrId } from '../../../decorators/correlation-id/correlation-id.decorator';
-import { BaseController } from '../../../base/base.controller';
+import { BaseController } from '../../../../../src/base/base.controller';
 
 @ApiTags('Root Methods')
 @Controller()

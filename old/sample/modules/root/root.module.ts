@@ -1,7 +1,7 @@
 import { MiddlewareConsumer, Module, NestModule } from '@nestjs/common';
 import { RootController } from './root.controller/root.controller';
 import { RootService } from './root.service/root.service';
-import { LoggerMiddleware } from '../../midleware/logger.middleware';
+import { LoggerMiddleware } from '../../../../src/midleware/logger.middleware';
 
 @Module({
   controllers: [RootController],

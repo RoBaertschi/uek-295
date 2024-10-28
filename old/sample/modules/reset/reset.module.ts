@@ -1,5 +1,5 @@
 import { MiddlewareConsumer, Module, NestModule } from '@nestjs/common';
-import { LoggerMiddleware } from '../../midleware/logger.middleware';
+import { LoggerMiddleware } from '../../../../src/midleware/logger.middleware';
 import { ResetController } from './reset.controller/reset.controller';
 import { ResetService } from './reset.service/reset.service';
 

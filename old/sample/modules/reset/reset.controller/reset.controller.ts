@@ -8,9 +8,9 @@ import {
   ApiUnauthorizedResponse,
 } from '@nestjs/swagger';
 import { CorrId } from '../../../decorators/correlation-id/correlation-id.decorator';
-import { BaseController } from '../../../base/base.controller';
+import { BaseController } from '../../../../../src/base/base.controller';
 import { ResetService } from '../reset.service/reset.service';
-import { JwtAuthGuard } from '../../auth/guards/jwt-auth.guard';
+import { JwtAuthGuard } from '../../../../../src/auth/guards/jwt-auth.guard';
 import { CurrentUser } from '../../../decorators/current-user/current-user.decorator';
 import { UserEntity } from '../../../generic.dtos/userDtoAndEntity';
 import { ErrorUnauthorizedDto } from '../../../generic.dtos/error.unauthorized.dto';

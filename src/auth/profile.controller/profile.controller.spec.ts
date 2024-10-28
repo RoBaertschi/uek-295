@@ -1,7 +1,7 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { ProfileController } from './profile.controller';
-import { UserInfoDto, UserReturnDto } from '../../../generic.dtos/userDtoAndEntity';
-import { MockType } from '../../../mocktypes/mocktype';
+import { UserInfoDto, UserReturnDto } from '../../../old/sample/generic.dtos/userDtoAndEntity';
+import { MockType } from '../../../old/sample/mocktypes/mocktype';
 import { UserService } from '../user.service/user.service';
 
 // we're testing with these users, and we expect this users
