@@ -4,8 +4,8 @@ dotenv.config();
 import { Test, TestingModule } from '@nestjs/testing';
 import { INestApplication } from '@nestjs/common';
 import { AppModule } from '../src/app.module';
-import { ArticleReturnDto } from '../src/sample/modules/article/dto/article-return-dto';
-import { ArticleCreateDto } from '../src/sample/modules/article/dto/article-create.dto';
+import { ArticleReturnDto } from '../old/sample/modules/article/dto/article-return-dto';
+import { ArticleCreateDto } from '../old/sample/modules/article/dto/article-create.dto';
 import { TestHttpClient } from './testing-tools/test-http-client';
 import { DbFileTools } from './testing-tools/db-file.tools';
 

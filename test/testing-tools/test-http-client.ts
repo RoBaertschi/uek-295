@@ -1,9 +1,9 @@
 import * as request from 'supertest';
 import { INestApplication } from '@nestjs/common';
 import { TestLogger } from './logger.tools';
-import { AuthService } from '../../src/sample/modules/auth/auth.service/auth.service';
+import { AuthService } from '../../old/sample/modules/auth/auth.service/auth.service';
 import { loginDtoAdmin, loginDtoUser } from '../security.e2e-spec';
-import { ResetService } from '../../src/sample/modules/reset/reset.service/reset.service';
+import { ResetService } from '../../old/sample/modules/reset/reset.service/reset.service';
 
 export class TestHttpClient {
   private readonly httpServer;

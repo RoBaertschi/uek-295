@@ -1,11 +1,11 @@
 import { MiddlewareConsumer, Module, NestModule } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 
-import { LoggerMiddleware } from './sample/midleware/logger.middleware';
-import { ArticleModule } from './sample/modules/article/article.module';
-import { AuthModule } from './sample/modules/auth/auth.module';
-import { RootModule } from './sample/modules/root/root.module';
-import { ResetModule } from './sample/modules/reset/reset.module';
+import { LoggerMiddleware } from '../old/sample/midleware/logger.middleware';
+import { ArticleModule } from '../old/sample/modules/article/article.module';
+import { AuthModule } from '../old/sample/modules/auth/auth.module';
+import { RootModule } from '../old/sample/modules/root/root.module';
+import { ResetModule } from '../old/sample/modules/reset/reset.module';
 
 @Module({
   imports: [
