@@ -36,7 +36,7 @@ Ersteller:
 | Package.json bearbeiten                         | 10min       | 10 min            |
 | SqlIte Datenbank aufsetzen und DTO Files machen | 30min       | 40 min            |
 | Swagger API Dokumentation                       | 30 min      | 45 min            |
-| Security.env erstellen                          | 10min       |                   |
+| Security.env erstellen                          | 10min       | 5 min             |
 | Alle/ein Item lesen                             | 1.5h        |                   |
 | Item anlegen und anpassen                       | 1.5h        |                   |
 | Item ersetzen und löschen                       | 1.5h        |                   |
