@@ -41,10 +41,17 @@ Ersteller:
 | Item anlegen und anpassen                       | 1.5h        | ^                 |
 | Item ersetzen und löschen                       | 1.5h        | ^                 |
 | Testing und Bugfixing                           | 3h          | 1.5h              |  
-| Linter fixing                                   | 30min       |                   |
-| Linter fixing                                   | 30min       |                   |
+| Linter fixing                                   | 30min       | 0 min             |
 
 etc.
 
-## Fazit
-.... hier kommt dein Fazit zur Aufgabe rein
+## Fazit Robin Bärtschi
+Die Planung für das Projekt war eher schwierig. Ich hatte Schwierigkeiten die Zeiten gut einzuordnen.
+Manche Dinge waren sehr viel einfacher als erwartet (Item lesen/anlegen/anpassen/löschen),
+währen dessen andere Dinge wie die Swagger API Dokumentation oder die Datenbank und DTO Files ein wenig länger
+ging als erwartet. Ich hatte das Glück, dass ich keine Linting errors hatte, da ich die ganze Zeit nebenan
+gemacht habe. Testing war sehr frustrierend aber auch nicht zu schwierig. Ein Test ist die
+ganze Zeit mit einem 500 fehlgeschlagen und ich konnte nicht herausfinden, warum er gecrasht ist,
+oder welcher Test überhaupts fehlgeschlagen ist. Im Ganzen, war das Projekt trotzdem
+sehr gut um die Anwendung von den gelernten Konzepten zu üben und testen und ich konnte immer
+noch etwas Neues lernen.
